@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+      body{
+        color: purple;
+        background-color: black
+      }
+
+    </style>
+  </head>
+  <body>
+    <script>
+
+      var num1;
+      var num2;
+      var operation
+
+      operation = prompt("what operation do you want to do 1=sum 2=subtraction 3=division 4=multiplication");
+
+      if(operation == 1 ){
+      	num1 = parseInt(prompt("insert the number 1"));
+      num2 = parseInt(prompt("inser the number 2 "));
+        document.write("<div align=center>" + "your operation is one " + " sum" + "</div>");
+        document.write("<div align=center>" + num1 + " + " + num2 + " = " + (parseInt(num1) + parseInt(num2)) + "</div>");
+      } else if(operation == 2){
+      	      	num1 = parseInt(prompt("insert the number 1"));
+      num2 = parseInt(prompt("inser the number 2 "));
+        document.write("<div align=center>" + "your operation is one " + " subtraction " + "</div>");
+        document.write("<div align=center>" + num1 + " - " + num2 + " = " + (parseInt(num1) - parseInt(num2)) + "</div>");
+      } else if(operation == 3){
+      	      	num1 = parseInt(prompt("insert the number 1"));
+      num2 = parseInt(prompt("inser the number 2 "));
+        document.write("<div align=center>" + "your operation is one " + " division " + "</div>");
+        document.write("<div align=center>" + num1 + " / " + num2 + " = " + (parseInt(num1) / parseInt(num2)) + "</div>");
+      } else if(operation == 4){
+      	      	num1 = parseInt(prompt("insert the number 1"));
+      num2 = parseInt(prompt("inser the number 2 "));
+        document.write("<div align=center>" + "your operation is one " + " multiplication " + "</div>");
+        document.write("<div align=center>" + num1 + " * " + num2 + " = " + (parseInt(num1) * parseInt(num2)) + "</div>");
+      }else
+      {
+      	alert("Operation invalid");
+      }
+    </script>
+
+  </body>
+</html>
